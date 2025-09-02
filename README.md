@@ -43,27 +43,6 @@ src/services/api.js
  ใช้ฟอนต์สวย ๆ
 - Context API → จัดการ Theme, Auth, Books
 
-📂 โครงสร้างไฟล์
-app/
- ├─ _layout.js          # Navigation Stack + Theme Toggle
- ├─ index.jsx           # หน้า Home
- ├─ signin.jsx          # หน้าเข้าสู่ระบบ
- ├─ signup.jsx          # หน้าสมัคร
- ├─ book.jsx            # List หนังสือ
- ├─ book_new.jsx        # เพิ่ม/แก้ไข หนังสือ
- ├─ book_detail.jsx     # รายละเอียดหนังสือ
- └─ about.jsx           # หน้า About
-
-src/
- ├─ context/
- │   ├─ AuthContext.js   # จัดการ Auth + Token
- │   ├─ BooksContext.js  # จัดการ Books CRUD
- │   └─ ThemeContext.js  # จัดการ Theme
- ├─ services/
- │   └─ api.js           # Axios instance + Interceptor ใส่ Bearer token
- └─ components/
-     └─ ui/              # UI Components (Button, Card, Text, BookCard, ThemeToggle)
-
 ✨ ฟีเจอร์
 - Login / Register ด้วย API + เก็บ Token
 - CRUD หนังสือ (เพิ่ม, แก้ไข, ลบ, ดูรายละเอียด)
