@@ -16,7 +16,7 @@ export default function Home() {
       <Card rounded="lg" style={{ alignItems: "center", gap: 8 }}>
         <Image source={require("../assets/image/profile.jpg")} style={styles.logo} />
         <Title>Book CRUD</Title>
-        <Subtitle>จัดการหนังสือ • Create • Read • Update • Delete</Subtitle>
+        <Subtitle>จัดการหนังสือ</Subtitle>
 
         <Link href="/book" asChild>
           <Button title="ไปหน้ารายการหนังสือ" />

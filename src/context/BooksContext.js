@@ -57,7 +57,7 @@ export function BooksProvider({ children }) {
 
   const getById = (id) => books.find((b) => getId(b) === String(id));
 
-  /* CREATE: POST /api/books */
+  /* POST /api/books */
   const addBook = async (payload) => {
     try {
       const res = await api.post("/api/books", payload);
@@ -88,7 +88,7 @@ export function BooksProvider({ children }) {
     }
   };
 
-  /** UPDATE: PUT /api/books/:id */
+  /** PUT /api/books/:id */
   const updateBook = async (id, patch) => {
     try {
       const res = await api.put(`/api/books/${id}`, patch);
@@ -104,7 +104,7 @@ export function BooksProvider({ children }) {
     }
   };
 
-  /** DELETE: DELETE /api/books/:id */
+  /** DELETE /api/books/:id */
   const removeBook = async (id) => {
     try {
       await api.delete(`/api/books/${id}`);

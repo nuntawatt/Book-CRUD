@@ -70,10 +70,7 @@ export default function SignIn() {
         />
 
         <Button title={submitting ? "กำลังเข้าสู่ระบบ..." : "เข้าสู่ระบบ"} onPress={onSubmit} disabled={submitting} />
-
-        <Muted style={{ marginTop: 8 }}>
-          เมื่อเข้าสู่ระบบแล้ว ทุกคำขอ API จะมี Authorization: Bearer &lt;token&gt; ให้อัตโนมัติ
-        </Muted>
+       
 
         <View style={{ height: 8 }} />
         <Link href="/signup" asChild>
