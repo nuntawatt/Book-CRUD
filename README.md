@@ -7,16 +7,16 @@
 
 🚀 การติดตั้งและรันแอป
 1. ติดตั้ง dependencies
-npm install
+- npm install
 2. รัน Backend (ของอาจารย์)
-npm install
-npm run dev
-Backend จะรันที่ http://localhost:3000
+- npm install
+- npm run dev
+- Backend จะรันที่ http://localhost:3000
 3. ตั้งค่า API
 src/services/api.js
-export const BASE_URL = "http://192.168.1.61:3000";
+- export const BASE_URL = "http://192.168.1.61:3000";
 4. รันแอป
-npx expo start
+- npx expo start
 
 🔑 การใช้งาน
 1. ลงทะเบียน / เข้าสู่ระบบ
